@@ -14,7 +14,7 @@
 
 /* clearfix */
 
-.barra-login::after{
+.barra-login::after, .header-nav:after{
   display: table;
   content: "";
   clear: both;
@@ -92,3 +92,42 @@
 /* header */
 
 /* barra navigazione dell'header */
+
+.header-nav{
+  height: 80px;
+  margin-top: 60px;
+  background-color: #fff;
+}
+
+.header-nav .logocontainer{
+  float: left;
+  width: 20%;
+  height: 80px;
+}
+
+.header-nav img[alt="logo"]{
+  height: 40px;
+  vertical-align: middle;
+}
+
+.header-nav ul{
+  display: inline-block;
+  width: 80%;
+  float: left;
+  list-style: none;
+  text-align: right;
+}
+
+.header-nav li{
+  display: inline-block;
+  margin-left: 15px;
+  line-height: 80px;
+}
+.header-nav li a{
+  text-decoration: none;
+  color: #000;
+}
+
+.header-nav .fas{
+  margin-left: 5px;
+}
