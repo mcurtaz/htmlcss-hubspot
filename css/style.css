@@ -3,3 +3,68 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* classe standard per impostare un padding a tutta la pagina */
+
+.rientro{
+  padding: 0 5%;
+}
+
+/* clearfix */
+
+.barra-login::after{
+  display: table;
+  content: "";
+  clear: both;
+}
+
+/* class button comune a tutti i bottoni arancioni */
+
+.button{
+  background-color: #fe775a;
+  padding: 10px;
+  border-radius: 0.5em;
+  color: white;
+  cursor: pointer;
+}
+
+/* barra navigazione login */
+
+.barra-login{
+  background-color: #f4f9fd;
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.barra-login>div{
+  float: left;
+  width: 50%;
+  line-height: 60px;
+}
+
+.barra-login a{
+  cursor: pointer;
+}
+
+.nav-login{
+  text-align: right;
+}
+
+.nav-globe a:first-child{
+  padding-right: 15px;
+}
+
+.nav-globe a:last-child{
+  padding-left: 15px;
+}
+
+.nav-login a{
+  margin-left: 20px;
+}
+
+.nav-login .fa-search{
+  color: #5fc5d5;
+}
