@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 /* regole generali */
@@ -26,8 +29,9 @@
   background-color: #fe775a;
   padding: 10px;
   border-radius: 0.5em;
-  color: white;
+  color: #fff;
   cursor: pointer;
+  text-decoration: none;
 }
 .button:hover{
   opacity: 0.6;
@@ -42,6 +46,7 @@
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 100;
 }
 
 .barra-login>div{
@@ -52,13 +57,14 @@
 
 .barra-login a{
   cursor: pointer;
+  font-weight: 400;
 }
 
 .barra-login .fas{
   margin: 0px 2px;
 }
 
-.nav-login{
+.nav-bottoni{
   text-align: right;
 }
 
@@ -70,11 +76,11 @@
   padding-left: 15px;
 }
 
-.nav-login a{
+.nav-bottoni a{
   margin-left: 20px;
 }
 
-.nav-login .fa-search{
+.nav-bottoni .fa-search{
   color: #5fc5d5;
 }
 
@@ -85,11 +91,11 @@
 }
 
 #specialbutton:hover{
-  background-color: rgba(254, 119, 90, 0.1)
+  background-color: rgba(254, 119, 90, 0.2)
 }
 
 
-/* header */
+/* header (barra navigazione + jumbotron)*/
 
 /* barra navigazione dell'header */
 
@@ -120,16 +126,19 @@
 
 .header-nav li{
   display: inline-block;
-  margin-left: 15px;
+  margin-left: 18px;
   line-height: 80px;
 }
+
 .header-nav li a{
-  text-decoration: none;
   color: #000;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .header-nav .fas{
-  margin-left: 5px;
+  margin-left: 7px;
 }
 
 /* jumbotron */
@@ -140,4 +149,34 @@
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: cover;
+}
+
+.header-titolo{
+  width: 40%;
+  padding-top: 80px;
+}
+
+.header-titolo h1{
+  font-weight: 900;
+  font-size: 60px;
+  margin-bottom: 30px;
+  line-height: 60px;
+}
+
+.header-titolo p{
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 35px;
+}
+
+.header-titolo a{
+  display: inline-block;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.header-titolo div:last-child{
+  font-size: 12px;
+  font-weight: 600;
 }
