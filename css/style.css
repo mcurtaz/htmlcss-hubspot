@@ -9,7 +9,7 @@
 /* classe standard per impostare un padding a tutta la pagina */
 
 .rientro{
-  padding: 0 5%;
+  padding: 0 8%;
 }
 
 /* clearfix */
@@ -106,8 +106,8 @@
 }
 
 .header-nav img[alt="logo"]{
+  margin-top: 20px;
   height: 40px;
-  vertical-align: middle;
 }
 
 .header-nav ul{
@@ -130,4 +130,14 @@
 
 .header-nav .fas{
   margin-left: 5px;
+}
+
+/* jumbotron */
+
+.jumbotron{
+  height: 600px;
+  background-image: url(../img/jumbotron.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: cover;
 }
