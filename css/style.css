@@ -17,7 +17,7 @@
 
 /* clearfix */
 
-.barra-login::after, .header-nav:after, .main-first .row-one::after, .main-first .row-two::after{
+.barra-login::after, .header-nav:after, .main-first .row-one::after, .main-first .row-two::after, .table-row-one::after, .table-row-two::after{
   display: table;
   content: "";
   clear: both;
@@ -207,6 +207,7 @@
 
 .main-first{
   background-color: #f4f9fd;
+  padding-bottom: 40px;
 }
 
 /* intestazione */
@@ -222,11 +223,11 @@
 
 .intestazione h2{
   margin: 10px 0 20px;
-  font-size: 30px;
+  font-size: 35px;
   font-weight: 800;
 }
 
-/* prima riga */
+/* prima riga divisa in due left e right */
 
 .main-first .row-one{
   background-color: #fff;
@@ -287,7 +288,7 @@ margin-top: 20px;
   margin-right: 20px;
 }
 
-/* seconda riga divisa in 3 colonne */
+/* seconda riga divisa in 3 blocchetti */
 
 .row-two .colonna30{
   float: left;
@@ -314,7 +315,8 @@ margin-top: 20px;
 }
 
 .row-two .colonna30 p{
-  margin-bottom: 40px;
+  height: 230px;
+  border-bottom: 1px solid #000;
 }
 
 .row-two .colonna30 .list-title{
@@ -330,4 +332,67 @@ margin-top: 20px;
   width: 140px;
   margin: 0 auto;
   margin-top: 20px;
+}
+
+/* seconda sezione del main con intestazione e tabella */
+
+.main-second {
+   background-image: linear-gradient(45deg, #00a4bd, #00bda5);
+   color: #fff;
+   text-align: center;
+   padding-top: 30px;
+   padding-bottom: 50px;
+}
+
+.main-second-intestazione h2{
+  margin: 20px 0;
+  font-size: 35px;
+  font-weight: 800;
+}
+
+.table{
+  margin: 50px 0;
+}
+.table-colonna25{
+  float: left;
+  width: 25%;
+}
+
+.table-row-one .table-colonna25{
+  padding-bottom: 20px;
+}
+
+.table-row-two .table-colonna25{
+  padding-top: 20px;
+}
+
+.table-row-one .table-colonna25{
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
+}
+
+.table-row-one .table-colonna25:last-child{
+  border-right: none;
+}
+
+.table-row-two .table-colonna25{
+  border-right: 1px solid #fff;
+}
+
+.table-row-two .table-colonna25:last-child{
+  border-right: none;
+}
+
+.table-colonna25 img{
+  height: 40px;
+}
+
+.table-colonna25 .number{
+ font-size: 45px;
+ font-weight: 900;
+ margin: 5px 0;
+}
+
+.table.colonna25 .bottom-text{
+  font-size: 18px;
 }
