@@ -17,7 +17,7 @@
 
 /* clearfix */
 
-.barra-login::after, .header-nav:after{
+.barra-login::after, .header-nav:after, .main-first .row-one::after{
   display: table;
   content: "";
   clear: both;
@@ -35,6 +35,23 @@
 }
 .button:hover{
   opacity: 0.6;
+}
+
+/* liste con simbolo check arancione */
+
+.list-title{
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: 600;
+}
+.orange-list{
+  list-style: none;
+}
+
+.orange-list .fas{
+  color: #fe775a;
+  font-size: 15px;
+  margin-right: 10px;
 }
 
 /* barra navigazione login */
@@ -179,4 +196,87 @@
 .header-titolo div:last-child{
   font-size: 12px;
   font-weight: 600;
+}
+
+/* main */
+
+/* prima sezione del main */
+
+.main-first{
+  background-color: #f4f9fd;
+}
+
+/* intestazione */
+
+.intestazione{
+  text-align: center;
+  padding: 30px 15% 30px;
+}
+
+.intestazione img[alt="cubo"]{
+  height: 150px;
+}
+
+.intestazione h2{
+  margin: 10px 0 20px;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+/* prima riga */
+
+.main-first .row-one{
+  background-color: #fff;
+  border: 1px solid #f1f6fb;
+  padding: 5%;
+}
+
+.row-one .left{
+  float: left;
+  width: 30%;
+  text-align: center;
+}
+.row-one .left img{
+  height: 120px;
+}
+.row-one .button{
+  width: 140px;
+  padding: 15px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.row-one .right{
+  float: left;
+  width: 70%;
+  padding-left: 30px;
+}
+
+.row-one h3{
+margin-bottom: 20px;
+}
+
+.row-one .right p{
+  margin-bottom: 15px;
+}
+
+.list-title span{
+  display: inline-block;
+  width: 28%;
+}
+
+.list-title hr{
+  color: #000;
+  display: inline-block;
+  margin-left: 5%;
+  width: 65%;
+  vertical-align: middle;
+}
+
+.row-one .right ul{
+margin-top: 20px;
+}
+.row-one .right li{
+  display: inline-block;
+  margin-right: 20px;
 }
