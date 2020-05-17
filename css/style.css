@@ -17,7 +17,7 @@
 
 /* clearfix */
 
-.barra-login::after, .header-nav:after, .main-first .row-one::after, .main-first .row-two::after, .table-row-one::after, .table-row-two::after{
+.barra-login::after, .header-nav:after, .main-first .row-one::after, .main-first .row-two::after, .table-row-one::after, .table-row-two::after,.main-third-row-one::after, .main-third-row-two::after, .third-one-colonna-right::after{
   display: table;
   content: "";
   clear: both;
@@ -395,4 +395,76 @@ margin-top: 20px;
 
 .table.colonna25 .bottom-text{
   font-size: 18px;
+}
+
+/* terza sezione del main con loghi clienti testi e immagini */
+
+.main-third{
+  background-color: #fff;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.third-one-colonna-left{
+  float: left;
+  width: 40%;
+  text-align: center;
+}
+
+.third-one-colonna-left .counter{
+  font-size: 50px;
+  font-weight: 900;
+  margin-bottom: 15px;
+}
+
+.third-one-colonna-right{
+  float: left;
+  width: 60%;
+  padding: 20px;
+}
+
+.third-one-colonna-right .client-logo{
+  float: left;
+  width: 25%;
+  text-align: center;
+  padding: 15px;
+}
+
+.third-one-colonna-right .client-logo img{
+  max-width: 100%;
+  max-height: 30px;
+}
+
+.main-third-row-two{
+  padding: 60px 0 40px 0;
+}
+
+.third-two-colonna-left{
+  float: left;
+  width: 50%;
+}
+
+.third-two-colonna-left h2{
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 25px;
+}
+
+.third-two-colonna-left .button{
+  display: inline-block;
+  margin: 20px 0;
+}
+
+.third-two-colonna-left div:last-child{
+  font-size: 14px;
+}
+
+.third-two-colonna-right{
+  float: left;
+  width: 50%;
+  text-align: right;
+}
+
+.third-two-colonna-right img{
+  height: 350px;
 }
