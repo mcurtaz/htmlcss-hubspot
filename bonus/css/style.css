@@ -1,0 +1,646 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+/* regole generali */
+
+/* classi standard per impostare del padding a più elementi */
+
+.rientro{
+  padding: 0 8%;
+}
+
+.rowtopbottom{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+/* clearfix */
+
+.barra-login::after, .header-nav:after, .main-first .row-one::after, .main-first .row-two::after, .table-row-one::after, .table-row-two::after,.main-third-row-one::after, .main-third-row-two::after, .footer-top::after, .footer-legal::after{
+  display: table;
+  content: "";
+  clear: both;
+}
+
+/* class button comune a tutti i bottoni arancioni */
+
+.button{
+  background-color: #fe775a;
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
+}
+.button:hover{
+  opacity: 0.6;
+}
+
+/* liste con simbolo check arancione */
+
+.list-title{
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 600;
+}
+.orange-list{
+  text-align: left;
+}
+
+.orange-list .fas{
+  color: #fe775a;
+  font-size: 15px;
+  margin-right: 10px;
+}
+
+/* link */
+
+a{
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+ul{
+  list-style: none;
+}
+
+/* dropdowns */
+
+.dropdown{
+  display: inline-block;
+}
+
+.dropdown-content{
+  display: none;
+  position: absolute;
+  transform: translate(-25%, -15px);
+  box-shadow: 4px 4px rgba(150, 150, 150, 0.3);
+  border-radius: 3px;
+  padding: 12px 18px 0px;
+  min-width: 100px;
+  border: 1px solid rgb(150, 150, 150);
+  z-index: 100;
+}
+
+.dropdown:hover .dropdown-content{
+  display: block;
+}
+
+.dropdown-content li:hover{
+  opacity: 0.6;
+}
+
+
+/* regole specifiche */
+
+/* barra navigazione login */
+
+.barra-login{
+  background-color: #f4f9fd;
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.barra-login>div{
+  float: left;
+  width: 50%;
+  line-height: 60px;
+}
+
+.barra-login a{
+  font-weight: 400;
+}
+
+.barra-login .fas{
+  margin: 0px 3px;
+}
+
+.nav-globe span{
+  margin: 0 15px;
+}
+
+/* globe dropdown */
+
+.nav-globe .dropdown-content{
+  background-color: #f4f9fd;
+  transform: translate(0, -10px);
+}
+
+.nav-globe .dropdown-content li{
+  line-height: normal;
+  margin-bottom: 10px;
+}
+
+/* parte destra con i bottoni */
+
+
+.nav-bottoni{
+  text-align: right;
+}
+
+.nav-bottoni .button{
+  margin-left: 20px;
+}
+
+.nav-bottoni .fa-search{
+  color: #5fc5d5;
+}
+
+#specialbutton{
+  color: #fe775a;
+  background-color: #fff;
+  border: 1px solid #fe775a;
+}
+
+#specialbutton:hover{
+  background-color: rgba(254, 119, 90, 0.1)
+}
+
+
+/* header (barra navigazione + jumbotron)*/
+
+/* barra navigazione dell'header */
+
+.header-nav{
+  height: 80px;
+  margin-top: 60px;
+  background-color: #fff;
+}
+
+.header-nav .logocontainer{
+  float: left;
+  width: 20%;
+  height: 80px;
+}
+
+.header-nav img[alt="logo"]{
+  margin-top: 20px;
+  height: 40px;
+}
+
+.header-nav .link-nav-principali{
+  display: inline-block;
+  width: 80%;
+  float: left;
+  text-align: right;
+}
+
+.header-nav .link-nav-principali>li{
+  display: inline-block;
+  margin-left: 18px;
+  line-height: 80px;
+}
+
+.header-nav .link-nav-principali>li a{
+  display: inline-block;
+  color: #000;
+}
+
+.header-nav .fas{
+  margin-left: 7px;
+}
+
+
+/* nav dropdown */
+
+.header-nav .dropdown-content{
+  background-color: #fff;
+}
+
+.header-nav .dropdown-content img{
+  height: 30px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.header-nav .dropdown-content ul{
+  text-align: center;
+  line-height: normal;
+  margin: 0 auto;
+}
+
+.header-nav .dropdown-content li{
+  margin-bottom: 20px;
+}
+
+/* dropdown leggermente diverso per i link resources */
+
+.header-nav .dropdown-content.resources li{
+  display: inline-block;
+  padding: 10px;
+  width: 24%;
+}
+
+.header-nav .dropdown-content.resources{
+  width: 600px;
+  right: 0;
+}
+
+.header-nav .dropdown-content.resources img{
+  height: 40px;
+  margin-bottom: 5px;
+}
+
+/* jumbotron */
+
+.jumbotron{
+  height: 600px;
+  background-image: url(../img/jumbotron.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: cover;
+}
+
+.header-titolo{
+  width: 40%;
+  padding-top: 80px;
+}
+
+.header-titolo h1{
+  font-weight: 900;
+  font-size: 60px;
+  margin-bottom: 30px;
+  line-height: 60px;
+}
+
+.header-titolo p{
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 35px;
+}
+
+.header-titolo a{
+  display: inline-block;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.header-titolo div:last-child{
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* main */
+
+/* prima sezione del main */
+
+.main-first{
+  background-color: #f4f9fd;
+}
+
+/* intestazione */
+
+.main-first .intestazione{
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.main-first .intestazione img[alt="cubo"]{
+  height: 150px;
+}
+
+.main-first .intestazione h2{
+  margin: 10px 0 20px;
+  font-size: 35px;
+  font-weight: 800;
+}
+
+/* prima riga divisa in due left e right */
+
+.main-first .row-one{
+  background-color: #fff;
+  border: 1px solid #f1f6fb;
+  padding: 5%;
+}
+
+.main-first .row-one .left{
+  float: left;
+  width: 30%;
+  text-align: center;
+}
+.main-first .row-one .left img{
+  height: 120px;
+}
+.main-first .row-one .button{
+  display: block;
+  width: 120px;
+  margin: 20px auto;
+}
+
+.main-first .row-one .right{
+  float: left;
+  width: 70%;
+  padding-left: 30px;
+}
+
+.main-first .row-one .right h3{
+  font-size: 25px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.main-first .row-one .right p{
+  margin-bottom: 15px;
+}
+
+.main-first .row-one .list-title h4{
+  display: inline-block;
+  width: 28%;
+}
+
+.main-first .row-one .list-title hr{
+  color: #000;
+  display: inline-block;
+  margin-left: 5%;
+  width: 65%;
+  vertical-align: middle;
+}
+
+.main-first .row-one .right ul{
+margin-top: 20px;
+}
+.main-first .row-one .right li{
+  display: inline-block;
+  margin-right: 20px;
+}
+
+/* seconda riga divisa in 3 blocchetti */
+
+.main-first .row-two .colonna30{
+  float: left;
+  width: 30%;
+  background-color: #fff;
+  border: 1px solid #f1f6fb;
+  padding: 2% 5%;
+  text-align: center;
+}
+
+.main-first .row-two .colonna30:nth-child(2){
+  margin: 0 5%;
+}
+
+.main-first .row-two .colonna30>img:first-of-type{
+  height: 120px;
+  text-align: center;
+}
+
+.main-first .row-two .colonna30 h3{
+  margin: 20px 0;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.main-first .row-two .colonna30 p{
+  min-height: 230px;
+  border-bottom: 1px solid #000;
+}
+
+.main-first .row-two .colonna30 .list-title{
+  margin: 20px 0;
+}
+
+.main-first .row-two .colonna30 li{
+  margin-bottom: 10px;
+}
+
+.main-first .row-two .colonna30 .button{
+  display: inline-block;
+  width: 140px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+/* seconda sezione del main con intestazione e tabella */
+
+.main-second {
+   background-image: linear-gradient(45deg, #00a4bd, #00bda5);
+   color: #fff;
+   text-align: center;
+   padding-top: 30px;
+   padding-bottom: 50px;
+}
+
+.main-second-intestazione h2{
+  margin-bottom: 20px;
+  font-size: 35px;
+  font-weight: 800;
+}
+
+.table-colonna25{
+  float: left;
+  width: 25%;
+}
+
+.table-row-one .table-colonna25{
+  padding-bottom: 20px;
+}
+
+.table-row-two .table-colonna25{
+  padding-top: 20px;
+}
+
+.table-row-one .table-colonna25{
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
+}
+
+.table-row-one .table-colonna25:last-child{
+  border-right: none;
+}
+
+.table-row-two .table-colonna25{
+  border-right: 1px solid #fff;
+}
+
+.table-row-two .table-colonna25:last-child{
+  border-right: none;
+}
+
+.table-colonna25 img{
+  height: 40px;
+}
+
+.table-colonna25 .number{
+ font-size: 45px;
+ font-weight: 900;
+ margin: 5px 0;
+}
+
+.table.colonna25 .bottom-text{
+  font-size: 18px;
+}
+
+/* terza sezione del main con loghi clienti testi e immagini */
+
+.main-third{
+  background-color: #fff;
+}
+
+/* parte sinistra con un po' di testo */
+.third-one-colonna-left{
+  float: left;
+  width: 40%;
+  text-align: center;
+}
+
+.third-one-colonna-left .counter{
+  font-size: 50px;
+  font-weight: 900;
+  margin-bottom: 15px;
+}
+
+/* parte destra con i loghi dei clienti */
+
+.third-one-colonna-right{
+  float: left;
+  width: 60%;
+  padding: 20px;
+  text-align: center;
+}
+
+
+.third-one-colonna-right .client-logo{
+  display: inline-block;
+  width: 22%;
+  text-align: center;
+  padding: 15px;
+}
+
+.third-one-colonna-right .client-logo img{
+  width: 100px;
+  vertical-align: middle;
+}
+
+.third-two-colonna-left{
+  float: left;
+  width: 50%;
+}
+
+.third-two-colonna-left h2{
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 25px;
+}
+
+.third-two-colonna-left .button{
+  display: inline-block;
+  margin: 20px 0;
+}
+
+.third-two-colonna-left div:last-child{
+  font-size: 14px;
+}
+
+.third-two-colonna-right{
+  float: left;
+  width: 50%;
+  text-align: right;
+}
+
+.third-two-colonna-right img{
+  height: 350px;
+}
+
+/* footer */
+
+footer{
+  background-color: #32495b;
+  color: #92a1b0;
+}
+
+
+footer a:hover{
+  color: #7fd1de;
+}
+
+footer .button a:hover{
+  color: #92a1b0;
+}
+/* parte superiore con le liste */
+
+.footer-list{
+  float: left;
+  width: 25%;
+}
+.footer-list li{
+  margin-bottom: 15px;
+}
+
+
+.footer-list li:first-child{
+  color: #fff;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.footer-list .button{
+  display: inline-block;
+  color: #32495b;
+  background-color: #92a1b0;
+}
+
+.footer-list .social-icon{
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+.footer-list .fab{
+  margin-right: 18px;
+}
+
+/* parte inferiore lingue e copyright */
+
+/* parte lingue */
+
+.footer-languages{
+  padding-bottom: 15px;
+  text-align: center;
+  border-bottom: 1px solid #92a1b0;
+}
+
+.footer-languages div{
+  display: inline-block;
+  margin: 0 20px;
+  color: #92a1b0;
+}
+
+/* parte copyright */
+
+.footer-legal{
+  padding-top: 15px;
+}
+
+.footer-legal-logo{
+  float: left;
+  width: 50%;
+  text-align: left;
+}
+
+.footer-legal-logo img{
+  height: 35px;
+}
+
+.footer-legal-logo div:last-child{
+  margin-top: 8px;
+  color: #FFF;
+}
+
+.footer-legal-right{
+  float: left;
+  width: 50%;
+  text-align: right;
+}
+
+.footer-legal-right a{
+  margin-left: 15px;
+}
