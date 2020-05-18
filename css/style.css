@@ -9,15 +9,19 @@
 
 /* regole generali */
 
-/* classe standard per impostare un padding a tutta la pagina */
+/* classi standard per impostare del padding a più elementi */
 
 .rientro{
   padding: 0 8%;
 }
 
+.rowtopbottom{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 /* clearfix */
 
-.barra-login::after, .header-nav:after, .main-first .row-one::after, .main-first .row-two::after, .table-row-one::after, .table-row-two::after,.main-third-row-one::after, .main-third-row-two::after, .third-one-colonna-right::after,.footer-top::after, .footer-legal::after{
+.barra-login::after, .header-nav:after, .main-first .row-one::after, .main-first .row-two::after, .table-row-one::after, .table-row-two::after,.main-third-row-one::after, .main-third-row-two::after, .footer-top::after, .footer-legal::after{
   display: table;
   content: "";
   clear: both;
@@ -45,7 +49,6 @@
   font-weight: 600;
 }
 .orange-list{
-  list-style: none;
   text-align: left;
 }
 
@@ -53,6 +56,18 @@
   color: #fe775a;
   font-size: 15px;
   margin-right: 10px;
+}
+
+/* link */
+
+a{
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+ul{
+  list-style: none;
 }
 
 /* regole specifiche */
@@ -76,24 +91,19 @@
 }
 
 .barra-login a{
-  cursor: pointer;
   font-weight: 400;
 }
 
 .barra-login .fas{
-  margin: 0px 2px;
+  margin: 0px 3px;
 }
 
 .nav-bottoni{
   text-align: right;
 }
 
-.nav-globe a:first-child{
-  padding-right: 15px;
-}
-
-.nav-globe a:last-child{
-  padding-left: 15px;
+.nav-globe span{
+  margin: 0 15px;
 }
 
 .nav-bottoni a{
@@ -111,7 +121,7 @@
 }
 
 #specialbutton:hover{
-  background-color: rgba(254, 119, 90, 0.2)
+  background-color: rgba(254, 119, 90, 0.1)
 }
 
 
@@ -140,21 +150,18 @@
   display: inline-block;
   width: 80%;
   float: left;
-  list-style: none;
   text-align: right;
 }
 
 .header-nav li{
   display: inline-block;
   margin-left: 18px;
-  line-height: 80px;
 }
 
 .header-nav li a{
+  display: inline-block;
   color: #000;
-  font-weight: 600;
-  cursor: pointer;
-  text-decoration: none;
+  line-height: 80px;
 }
 
 .header-nav .fas{
@@ -207,14 +214,14 @@
 
 .main-first{
   background-color: #f4f9fd;
-  padding-bottom: 40px;
 }
 
 /* intestazione */
 
 .intestazione{
   text-align: center;
-  padding: 30px 15% 30px;
+  width: 70%;
+  margin: 0 auto;
 }
 
 .intestazione img[alt="cubo"]{
@@ -233,46 +240,45 @@
   background-color: #fff;
   border: 1px solid #f1f6fb;
   padding: 5%;
-  margin-bottom: 30px;
 }
 
-.row-one .left{
+.main-first .row-one .left{
   float: left;
   width: 30%;
   text-align: center;
 }
-.row-one .left img{
+.main-first .row-one .left img{
   height: 120px;
 }
-.row-one .button{
+.main-first .row-one .button{
   width: 140px;
   padding: 15px;
   margin: 20px auto;
   text-align: center;
 }
 
-.row-one .right{
+.main-first .row-one .right{
   float: left;
   width: 70%;
   padding-left: 30px;
 }
 
-.row-one .right h3{
+.main-first .row-one .right h3{
   font-size: 25px;
   font-weight: 800;
   margin-bottom: 20px;
 }
 
-.row-one .right p{
+.main-first .row-one .right p{
   margin-bottom: 15px;
 }
 
-.list-title h4{
+.main-first .row-one .list-title h4{
   display: inline-block;
   width: 28%;
 }
 
-.list-title hr{
+.main-first .row-one .list-title hr{
   color: #000;
   display: inline-block;
   margin-left: 5%;
@@ -280,17 +286,17 @@
   vertical-align: middle;
 }
 
-.row-one .right ul{
+.main-first .row-one .right ul{
 margin-top: 20px;
 }
-.row-one .right li{
+.main-first .row-one .right li{
   display: inline-block;
   margin-right: 20px;
 }
 
 /* seconda riga divisa in 3 blocchetti */
 
-.row-two .colonna30{
+.main-first .row-two .colonna30{
   float: left;
   width: 30%;
   background-color: #fff;
@@ -299,35 +305,35 @@ margin-top: 20px;
   text-align: center;
 }
 
-.row-two .colonna30:nth-child(2){
+.main-first .row-two .colonna30:nth-child(2){
   margin: 0 5%;
 }
 
-.row-two .colonna30>img:first-of-type{
+.main-first .row-two .colonna30>img:first-of-type{
   height: 120px;
   text-align: center;
 }
 
-.row-two .colonna30 h3{
+.main-first .row-two .colonna30 h3{
   margin: 20px 0;
   font-size: 25px;
   font-weight: 800;
 }
 
-.row-two .colonna30 p{
-  height: 230px;
+.main-first .row-two .colonna30 p{
+  min-height: 230px;
   border-bottom: 1px solid #000;
 }
 
-.row-two .colonna30 .list-title{
+.main-first .row-two .colonna30 .list-title{
   margin: 20px 0;
 }
 
-.row-two .colonna30 li{
+.main-first .row-two .colonna30 li{
   margin-bottom: 10px;
 }
 
-.row-two .colonna30 .button{
+.main-first .row-two .colonna30 .button{
   display: inline-block;
   width: 140px;
   margin: 0 auto;
@@ -345,14 +351,11 @@ margin-top: 20px;
 }
 
 .main-second-intestazione h2{
-  margin: 20px 0;
+  margin-bottom: 20px;
   font-size: 35px;
   font-weight: 800;
 }
 
-.table{
-  margin: 50px 0;
-}
 .table-colonna25{
   float: left;
   width: 25%;
@@ -401,10 +404,9 @@ margin-top: 20px;
 
 .main-third{
   background-color: #fff;
-  padding-top: 40px;
-  padding-bottom: 40px;
 }
 
+/* parte sinistra con un po' di testo */
 .third-one-colonna-left{
   float: left;
   width: 40%;
@@ -417,26 +419,26 @@ margin-top: 20px;
   margin-bottom: 15px;
 }
 
+/* parte destra con i loghi dei clienti */
+
 .third-one-colonna-right{
   float: left;
   width: 60%;
   padding: 20px;
+  text-align: center;
 }
 
+
 .third-one-colonna-right .client-logo{
-  float: left;
-  width: 25%;
+  display: inline-block;
+  width: 22%;
   text-align: center;
   padding: 15px;
 }
 
 .third-one-colonna-right .client-logo img{
-  max-width: 100%;
-  max-height: 30px;
-}
-
-.main-third-row-two{
-  padding: 60px 0 40px 0;
+  width: 100px;
+  vertical-align: middle;
 }
 
 .third-two-colonna-left{
@@ -476,25 +478,24 @@ footer{
   color: #92a1b0;
 }
 
+
+footer a:hover{
+  color: #7fd1de;
+}
+
+footer .button a:hover{
+  color: #92a1b0;
+}
 /* parte superiore con le liste */
 
-.footer-top{
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
 .footer-list{
   float: left;
   width: 25%;
 }
 .footer-list li{
-  list-style: none;
   margin-bottom: 15px;
 }
 
-.footer-list a{
-  text-decoration: none;
-  color: #92a1b0;
-}
 
 .footer-list li:first-child{
   color: #fff;
@@ -509,7 +510,8 @@ footer{
 }
 
 .footer-list .social-icon{
-  font-size: 18px;
+  font-size: 20px;
+  margin-bottom: 0;
 }
 
 .footer-list .fab{
@@ -520,13 +522,10 @@ footer{
 
 /* parte lingue */
 
-.footer-bottom{
-  padding: 20px 0 30px 0;
-}
 .footer-languages{
   padding-bottom: 15px;
   text-align: center;
-  border-bottom: 1px solid
+  border-bottom: 1px solid #92a1b0;
 }
 
 .footer-languages div{
@@ -538,7 +537,7 @@ footer{
 /* parte copyright */
 
 .footer-legal{
-  padding: 30px 0 30px 0;
+  padding-top: 15px;
 }
 
 .footer-legal-logo{
@@ -547,20 +546,19 @@ footer{
   text-align: left;
 }
 
-.footer-legal-right{
-  float: left;
-  width: 50%;
-  text-align: right;
-}
-
-footer a{
-  text-decoration: none;
-  color: #92a1b0;
+.footer-legal-logo img{
+  height: 35px;
 }
 
 .footer-legal-logo div:last-child{
   margin-top: 8px;
   color: #FFF;
+}
+
+.footer-legal-right{
+  float: left;
+  width: 50%;
+  text-align: right;
 }
 
 .footer-legal-right a{
