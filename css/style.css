@@ -21,7 +21,7 @@
 }
 /* clearfix */
 
-.barra-login::after, .header-nav:after, .main-first .row-one::after, .main-first .row-two::after, .table-row-one::after, .table-row-two::after,.main-third-row-one::after, .main-third-row-two::after, .footer-top::after, .footer-legal::after{
+.barra-login::after, .header-nav:after, .main-first .first-row-one::after, .main-first .first-row-two::after, .table-row-one::after, .table-row-two::after,.main-third-row-one::after, .main-third-row-two::after, .footer-top::after, .footer-legal::after{
   display: table;
   content: "";
   clear: both;
@@ -42,11 +42,12 @@
 
 /* liste con simbolo check arancione */
 
-.list-title{
+/* .list-title{
   text-transform: uppercase;
   font-size: 18px;
   font-weight: 600;
-}
+} */
+
 .orange-list{
   text-align: left;
 }
@@ -69,7 +70,31 @@ ul{
   list-style: none;
 }
 
+/* formattazione titoli */
+
+h2{
+  margin: 10px 0 20px;
+  font-size: 35px;
+  font-weight: 800;
+}
+
+h3{
+  margin: 10px 0 20px;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+h4{
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 10px 0 20px;
+}
+
+
+
 /* regole specifiche */
+
 
 /* barra navigazione login */
 
@@ -217,66 +242,55 @@ ul{
 
 /* intestazione */
 
-.main-first .intestazione{
+.main-first .main-first-intestazione{
   text-align: center;
   width: 70%;
   margin: 0 auto;
 }
 
-.main-first .intestazione img[alt="cubo"]{
+.main-first .main-first-intestazione img[alt="cubo"]{
   height: 150px;
 }
 
-.main-first .intestazione h2{
-  margin: 10px 0 20px;
-  font-size: 35px;
-  font-weight: 800;
-}
 
 /* prima riga divisa in due left e right */
 
-.main-first .row-one{
+.main-first .first-row-one{
   background-color: #fff;
   border: 1px solid #f1f6fb;
   padding: 5%;
 }
 
-.main-first .row-one .left{
+.main-first .first-row-one .first-one-left{
   float: left;
   width: 30%;
   text-align: center;
 }
-.main-first .row-one .left img{
+.main-first .first-row-one .first-one-left img{
   height: 120px;
 }
-.main-first .row-one .button{
+.main-first .first-row-one .button{
   display: block;
   width: 120px;
   margin: 20px auto;
 }
 
-.main-first .row-one .right{
+.main-first .first-row-one .first-one-right{
   float: left;
   width: 70%;
   padding-left: 30px;
 }
 
-.main-first .row-one .right h3{
-  font-size: 25px;
-  font-weight: 800;
-  margin-bottom: 20px;
-}
-
-.main-first .row-one .right p{
+.main-first .first-row-one .first-one-right p{
   margin-bottom: 15px;
 }
 
-.main-first .row-one .list-title h4{
+.main-first .first-row-one .list-title h4{
   display: inline-block;
   width: 28%;
 }
 
-.main-first .row-one .list-title hr{
+.main-first .first-row-one .list-title hr{
   color: #000;
   display: inline-block;
   margin-left: 5%;
@@ -284,17 +298,14 @@ ul{
   vertical-align: middle;
 }
 
-.main-first .row-one .right ul{
-margin-top: 20px;
-}
-.main-first .row-one .right li{
+.main-first .first-row-one .right li{
   display: inline-block;
   margin-right: 20px;
 }
 
 /* seconda riga divisa in 3 blocchetti */
 
-.main-first .row-two .colonna30{
+.main-first .first-row-two .first-two-colonna30{
   float: left;
   width: 30%;
   background-color: #fff;
@@ -303,35 +314,26 @@ margin-top: 20px;
   text-align: center;
 }
 
-.main-first .row-two .colonna30:nth-child(2){
+.main-first .first-row-two .first-two-colonna30:nth-child(2){
   margin: 0 5%;
 }
 
-.main-first .row-two .colonna30>img:first-of-type{
+.main-first .first-row-two .first-two-colonna30>img:first-of-type{
   height: 120px;
   text-align: center;
 }
 
-.main-first .row-two .colonna30 h3{
-  margin: 20px 0;
-  font-size: 25px;
-  font-weight: 800;
-}
-
-.main-first .row-two .colonna30 p{
+.main-first .first-row-two .first-two-colonna30 p{
   min-height: 230px;
   border-bottom: 1px solid #000;
 }
 
-.main-first .row-two .colonna30 .list-title{
-  margin: 20px 0;
-}
 
-.main-first .row-two .colonna30 li{
+.main-first .first-row-two .first-two-colonna30 li{
   margin-bottom: 10px;
 }
 
-.main-first .row-two .colonna30 .button{
+.main-first .first-row-two .first-two-colonna30 .button{
   display: inline-block;
   width: 140px;
   margin: 0 auto;
@@ -346,12 +348,6 @@ margin-top: 20px;
    text-align: center;
    padding-top: 30px;
    padding-bottom: 50px;
-}
-
-.main-second-intestazione h2{
-  margin-bottom: 20px;
-  font-size: 35px;
-  font-weight: 800;
 }
 
 .table-colonna25{
@@ -444,11 +440,6 @@ margin-top: 20px;
   width: 50%;
 }
 
-.third-two-colonna-left h2{
-  font-size: 40px;
-  font-weight: 800;
-  margin-bottom: 25px;
-}
 
 .third-two-colonna-left .button{
   display: inline-block;
