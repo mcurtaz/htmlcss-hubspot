@@ -42,12 +42,6 @@
 
 /* liste con simbolo check arancione */
 
-/* .list-title{
-  text-transform: uppercase;
-  font-size: 18px;
-  font-weight: 600;
-} */
-
 .orange-list{
   text-align: left;
 }
@@ -298,7 +292,7 @@ h4{
   vertical-align: middle;
 }
 
-.main-first .first-row-one .right li{
+.main-first .first-row-one .first-one-right li{
   display: inline-block;
   margin-right: 20px;
 }
